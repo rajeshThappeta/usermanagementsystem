@@ -8,6 +8,8 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 3000;
+server.use(middlewares);
+server.use(router);
 
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist/Ang10AppMultipleModules'));
