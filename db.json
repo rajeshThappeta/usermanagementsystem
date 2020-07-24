@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "email": "rajesh.t7982@gmail.com",
+      "username": "rajesh",
+      "password": "rajesh",
+      "dob": "2020-07-21",
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "email": "test@gmail.com",
+      "username": "test",
+      "password": "test",
+      "dob": "2020-07-21",
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "email": "test2@gmail.com",
+      "username": "test2",
+      "password": "test2",
+      "dob": "2020-07-04",
+      "gender": "male",
+      "id": 3
+    },
+    {
+      "email": "",
+      "username": "suresh",
+      "password": "suresh",
+      "dob": "2020-07-23",
+      "gender": "male",
+      "id": 4
+    },
+    {
+      "email": "",
+      "username": "kiran",
+      "password": "kiran",
+      "dob": "",
+      "gender": "",
+      "id": 5
+    }
+  ]
+}

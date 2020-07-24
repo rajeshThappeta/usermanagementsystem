@@ -1,0 +1,8 @@
+<h4 class="text-right">Welcome, <span class="text-danger">{{username}}</span></h4>
+
+<!-- <a routerLink="userprofile"  [state]="{data:id}">profile</a> -->
+<a routerLink="userprofile"  >profile</a>
+<a routerLink="testlazy"  >testlazy</a>
+
+
+<router-outlet (activate)="onActivate($event)"></router-outlet>

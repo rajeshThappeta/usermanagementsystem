@@ -1,0 +1,78 @@
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <!--create login form-->
+            <form #ref="ngForm"  (ngSubmit)="userRegistration(ref)">
+               
+
+                <!--add email-->
+                <div class="form-group">
+                    <label for="em">E-mail</label>
+                    <input type="email" name="email" id="em" class="form-control" ngModel >
+                </div>
+
+                
+
+                <!--add user name-->
+                <div class="form-group">
+                    <label for="un">User name</label>
+                    <input type="text" name="username" id="un" class="form-control" ngModel required minlength="4" #refusername="ngModel" autocomplete="off">
+                </div>
+
+                <!--validation for username-->
+                <div *ngIf="refusername.invalid && (refusername.dirty || refusername.touched)" class="alert alert-danger">
+                    <div *ngIf="refusername.errors?.required" class="alert-alert-danger">
+                        *Name is required.
+                    </div>
+                    <div *ngIf="refusername.errors?.minlength" class="alert-alert-danger">
+                        *Name must be at least 4 characters long.
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                
+                <!--add password-->
+                <div class="form-group">
+                    <label for="pw">Password</label>
+                    <input type="text" name="password" id="pw" class="form-control" ngModel pattern="\d\d-\d.*" #refpassword="ngModel">
+                </div>
+
+                <!--validation for password-->
+                <div *ngIf="refpassword.errors?.pattern" class="alert alert-danger">Password is invalid</div>
+                <!--add date of birth-->
+                <div class="form-group">
+                    <label for="db">Date of birth</label>
+                    <input type="date" name="dob" id="db" class="form-control" ngModel>
+                </div>
+
+
+                 <!--add radios for admin and user-->
+                 <label for="">Choose gender</label>
+                 <!--radio for admin-->
+                 <div class="form-check">
+                     <input type="radio" name="gender" id="admin" class="form-check-input"value="male" ngModel>
+                     <label for="admin" class="form-check-label">Male</label>
+                 </div>
+ 
+                  <!--radio for user-->
+                  <div class="form-check">
+                     <input type="radio" name="gender" id="user" class="form-check-input" value="female" ngModel>
+                     <label for="user" class="form-check-label">Female</label>
+                 </div>
+                <!--add submit button-->
+                <button type="submit" [disabled]=ref.invalid  class="btn btn-success d-block mx-auto">Register</button>
+            </form>
+
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+
+
+
+
+
