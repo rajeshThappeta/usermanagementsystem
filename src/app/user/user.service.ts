@@ -34,4 +34,9 @@ export class UserService {
     this.userloginstatus=false;
   }
 
+
+  saveEditedUserObject(userObj):Observable<any>{
+    return this.hc.put(`http://localhost:3000/users/${userObj.id}`,userObj);
+  }
+
 }

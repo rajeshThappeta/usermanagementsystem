@@ -1,12 +1,12 @@
 {
   "users": [
     {
-      "email": "rajesh.t7982@gmail.com",
+      "id": 1,
       "username": "rajesh",
       "password": "rajesh",
-      "dob": "2020-07-21",
-      "gender": "male",
-      "id": 1
+      "email": "fullstacdeveloper@gmail.com",
+      "dob": "2020-07-06",
+      "gender": "2020-07-12"
     },
     {
       "email": "test@gmail.com",

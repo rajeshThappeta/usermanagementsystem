@@ -12,15 +12,19 @@ export class UserprofileComponent implements OnInit {
 
 
   id:any;
+  username:string;
   userObject:any={};
   constructor(private us:UserService, private router:Router) { }
 
   ngOnInit(): void {
    
     console.log("user id at user profile component is ",this["id"]);
+
     this.us.getUser(this["id"]).subscribe(
       userObj=>{
           this.userObject=userObj;
+          this.id=userObj["id"];
+          this.username=userObj["username"];
           
       },
       err=>{
@@ -33,7 +37,10 @@ export class UserprofileComponent implements OnInit {
  
   editUserProfile(){
     //navigate to user edit profile component
-    this.router.navigateByUrl("user/userdashboard/1/username/editprofile")
+
+    console.log("id in user profile ",this.id);
+    console.log("username in user profile ",this.username);
+    this.router.navigateByUrl(`user/userdashboard/${this.id}/${this.username}/editprofile`)
   }
   
 

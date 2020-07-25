@@ -23,6 +23,7 @@ export class UserdashboardComponent implements OnInit {
     
     //add ID to event object
     event.id=this.id;
+    event.username=this.username;
     console.log(event);
   }
 
