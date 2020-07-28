@@ -17,7 +17,7 @@ export class UserprofileComponent implements OnInit {
   constructor(private us:UserService, private router:Router) { }
 
   ngOnInit(): void {
-   
+   console.log(this)
     console.log("user id at user profile component is ",this["id"]);
 
     this.us.getUser(this["id"]).subscribe(
@@ -35,6 +35,8 @@ export class UserprofileComponent implements OnInit {
 
   }
  
+
+  //update user profile
   editUserProfile(){
     //navigate to user edit profile component
 
@@ -44,6 +46,24 @@ export class UserprofileComponent implements OnInit {
   }
   
 
+  //delete user profile
+  deleteUserProfile(){
+
+    this.us.deleteUser(this.id).subscribe(
+      res=>{
+        alert("profile removed successfully");
+        //navigate to register component
+        this.router.navigateByUrl("/register");
+        //change login status
+        this.us.userLogout();
+      },
+      err=>{
+        alert("something went wrong in delete");
+        console.log(err);
+      }
+    );
+
+  }
 }
 
 

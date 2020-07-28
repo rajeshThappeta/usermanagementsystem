@@ -19,7 +19,7 @@ export class EdituserprfoileComponent implements OnInit {
 
   ngOnInit(): void {
     //read id from url
-   
+   console.log(this)
     console.log("id is ",this["id"]);
     console.log("username is ",this["username"]);
     //get user object

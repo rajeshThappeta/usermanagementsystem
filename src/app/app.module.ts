@@ -10,6 +10,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import {AdminModule} from './admin/admin.module';
 import {FormsModule} from '@angular/forms';
 import {UserModule} from '../app/user/user.module';
+import { SquarePipe } from './square.pipe';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import {UserModule} from '../app/user/user.module';
     HomeComponent,
     RegisterComponent,
     LoginComponent,
-    AboutusComponent
+    AboutusComponent,
+    SquarePipe
+   
   ],
   imports: [
     BrowserModule,

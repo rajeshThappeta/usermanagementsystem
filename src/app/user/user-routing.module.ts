@@ -6,6 +6,7 @@ import { TestlazyComponent } from '../testlazy/testlazy/testlazy.component';
 import { EdituserprfoileComponent } from './edituserprfoile/edituserprfoile.component';
 
 
+
 //http:localhost:4200/user/userdashboard/<id>/<username>/editprofile
 const routes: Routes = [{
   path:"user/userdashboard/:id/:username",component:UserdashboardComponent,children:[

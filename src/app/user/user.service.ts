@@ -32,11 +32,19 @@ export class UserService {
 
   userLogout(){
     this.userloginstatus=false;
+    
   }
 
 
+  //to edit user profile
   saveEditedUserObject(userObj):Observable<any>{
     return this.hc.put(`http://localhost:3000/users/${userObj.id}`,userObj);
+  }
+
+
+  //to delete user profile
+  deleteUser(id):Observable<any>{
+    return this.hc.delete(`http://localhost:3000/users/${id}`);
   }
 
 }

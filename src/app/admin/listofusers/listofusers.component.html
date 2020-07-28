@@ -1,0 +1,33 @@
+
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        Search by
+        <select name="searchfield" id="" [(ngModel)]="searchfield">
+            <option value="username">Usename</option>
+            <option value="email">Email</option>
+            <option value="gender">Gender</option>
+        </select>
+        <input type="text" [(ngModel)]="searchTerm" class="form-control mb-5" placeholder="search by {{searchfield}}">
+        <table class="table">
+           
+            <thead class="thead-dark">
+                <th>Id</th>
+                <th>Email</th>
+                <th>User name</th>
+                <th>Date of birth</th>
+                <th>Gender</th>
+            </thead>
+
+            <tr *ngFor="let user of usersList | search: searchTerm:searchfield">
+                <td>{{user?.id}}</td>
+                <td>{{user?.email}}</td>
+                <td>{{user?.username}}</td>
+                <td>{{user?.dob}}</td>
+                <td>{{user?.gender}}</td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="col-2"></div>
+</div>

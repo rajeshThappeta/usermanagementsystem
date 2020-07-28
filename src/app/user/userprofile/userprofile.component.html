@@ -13,16 +13,17 @@
                 <th>Gender</th>
             </thead>
             <tr>
-                <td>{{userObject?.username}}</td>
+                <td>{{userObject?.username | titlecase}}</td>
                 <td>{{userObject?.dob}}</td>
-                <td>{{userObject?.email}}</td>
-                <td>{{userObject?.gender}}</td>
+                <td>{{userObject?.email  | titlecase}}</td>
+                <td>{{userObject?.gender | titlecase}}</td>
             </tr>
         </table>
 
     </div>
     <div class="col-sm-3">
         <div class="text-right">
+            <button class=" btn btn-danger"  (click)="deleteUserProfile()">Delete profile</button>
             <button class=" btn btn-warning"  (click)="editUserProfile()">Edit profile</button>
         </div>
     </div>

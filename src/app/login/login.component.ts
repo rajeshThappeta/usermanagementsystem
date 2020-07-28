@@ -61,6 +61,7 @@ export class LoginComponent implements OnInit {
                   if(userObject.password==userObj.password){
                       //NAVIGATE TO USER DASH BOARD along with username as url param
                       this.userService.userloginstatus=true;
+                     
                       this.router.navigate(['user/userdashboard',userObject.id,userObject.username]);
                       return;
                   }

@@ -1,44 +1,44 @@
 {
   "users": [
     {
-      "id": 1,
-      "username": "rajesh",
-      "password": "rajesh",
-      "email": "fullstacdeveloper@gmail.com",
-      "dob": "2020-07-06",
-      "gender": "2020-07-12"
-    },
-    {
-      "email": "test@gmail.com",
-      "username": "test",
-      "password": "test",
-      "dob": "2020-07-21",
+      "email": "jugal@mail.com",
+      "username": "jugal",
+      "password": "jugal",
+      "dob": "2020-07-24",
       "gender": "male",
       "id": 2
     },
     {
-      "email": "test2@gmail.com",
-      "username": "test2",
-      "password": "test2",
-      "dob": "2020-07-04",
+      "email": "lokesh@mail.com",
+      "username": "lokesh",
+      "password": "lokesh",
+      "dob": "2020-07-10",
       "gender": "male",
       "id": 3
     },
     {
-      "email": "",
-      "username": "suresh",
-      "password": "suresh",
-      "dob": "2020-07-23",
+      "email": "chandu@mail.com",
+      "username": "chandu",
+      "password": "chandu",
+      "dob": "2020-07-09",
       "gender": "male",
       "id": 4
     },
     {
-      "email": "",
-      "username": "kiran",
-      "password": "kiran",
-      "dob": "",
-      "gender": "",
+      "email": "uday@mail.com",
+      "username": "uday",
+      "password": "uday",
+      "dob": "2020-07-17",
+      "gender": "male",
       "id": 5
+    },
+    {
+      "id": 6,
+      "username": "rajesh",
+      "password": "rajesh",
+      "email": "kanna@gmail.com",
+      "dob": "2020-07-24",
+      "gender": "2020-07-24"
     }
   ]
 }
